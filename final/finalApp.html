@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->wave
+    <div class="sidebar">
+      <h1>Welcome to Hel[]mand!</h1>
+      <p><i>The land of no return...</i> Click on the village you would like to learn more about</p>
+
+    <!-- Create Wave Dropdown Menu  -->
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Select Wave</button>
+            </div>
+      <select id='wave-select'>
+        <option value="5">Wave 5</option>
+        <option value="7">Wave 7</option>
+        <option value="8">Wave 8</option>
+        <option value="9">Wave 9</option>
+        <option value="10">Wave 10</option>
+        <option value="18">Wave 18</option>
+        <option value="19">Wave 19</option>
+        <option value="20">Wave 20</option>
+        <option value="21">Wave 21</option>
+        <option value="22">Wave 22</option>
+        <option value="23">Wave 23</option>
+        <option value="24">Wave 24</option>
+        <option value="25">Wave 25</option>
+        <option value="26">Wave 26</option>
+    </select>
+<p> </p>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Select Client</button>
+            </div>
+      <select id='client-select'>
+        <option value="2">TAF</option>
+        <option value="1">ANQAR</option>
+        <option value="3">Futures</option>
+          </select>
+
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+
+      th, td {
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+    tr:nth-child(even) {background-color: #4CAF50}
+
+    </style>
+
+    <h1>Legend</h1>
+
+<table>
+  <tr>
+    <th>Variable </th>
+    <th>Explanation</th>
+  </tr>
+  <tr>
+    <td>NOEDUPERCENT</td>
+    <td>Percent of Residents with no Education</td>
+  </tr>
+  <tr>
+    <td>MEANHHSIZE</td>
+    <td>Mean Age of Village</td>
+  </tr>
+  <tr>
+    <td>VILLAGENAME</td>
+    <td>Name of Village</td>
+  </tr>
+  <tr>
+    <td>UNEMPLOYEDPERCENT</td>
+    <td>Percent of Residents Unemployed</td>
+  </tr>
+  <tr>
+    <td>btw10_15k</td>
+    <td>Percent of Residents Monthly Income $150-$220</td>
+  </tr>
+</table>
+
+
+
+    </div>
+
+
+    <!-- Map -->
+    <div id="map" class="map"></div>
+
+    <!-- infowindow -->
+
+    <script type="infowindow/html" id="infowindow_template">
+  <div class="cartodb-popup v2">
+  //     <div class="infowindow-custom">
+  //       <a href="#close" class="cartodb-popup-close-button close">x</a>
+  //       <div class="cartodb-popup-content-wrapper">
+  //        <div class="cartodb-popup-content">
+  //            <img width="100%" src="{{content.data._url}}"></src>
+  //            <h4>{{'noedupercent'}}, {{'wave'}}}</h4>
+  //          </div>
+  //        </div>
+  //        </div>
+  //        <div class="cartodb-popup-tip-container"></div>
+  //     </div>
+  //   </script>
+
+
+    <!-- Javascript Imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.js"></script>
+    <script src="js/mainApp.js"></script>
+  </body>
+</html>
